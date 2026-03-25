@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Artesanal - Dulce Artesanía</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos/Style.css">
+    <style>
+        :root {
+            --pink-main: #d81b60;
+            --pink-dark: #c2185b;
+            --soft-bg: #fff5f8;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Video Section */
+        .video-section { position: relative; overflow: hidden; background-color: #000; }
+        
+        .wave-transition {
+            position: absolute;
+            bottom: -1px; 
+            left: 0;
+            width: 100%;
+            height: 100px; 
+            z-index: 5;
+        }
+
+        .video-overlay { 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            text-align: center;
+            color: #c2185b;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* Utility Cards */
+        .cake-hover {
+            transition: transform 0.3s ease, shadow 0.3s ease;
+        }
+        .cake-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+
+        .img-crop {
+            height: 200px;
+            overflow: hidden;
+        }
+        .img-crop img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn-pink {
+            background-color: var(--pink-main);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-pink:hover {
+            background-color: var(--pink-dark);
+            color: white;
+        }
+
+        .social-link {
+            color: var(--pink-main);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .social-link:hover { color: var(--pink-dark); }
+
+        /* Section Spacing */
+        section { padding: 60px 0; }
+
+        /* New Styles for expanded content */
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--pink-main);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<!--navegador-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cake2"></i> DULCE ARTESANÍA
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienessomos.html">¿Quién soy?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeriaconbootstrap.html">sevicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contactos.html">contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+          <div class="container-fluid p-0">
+        <div class="video-section">
+            <div class="ratio ratio-21x9">
+                 <div class="wave-transition">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                  <path d="M-1.92,89.85 C186.00,6.21 328.21,5.22 500.90,92.80 L500.00,-0.00 L0.00,-0.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                </svg>
+            </div>
+                <video autoplay muted loop playsinline poster="imagenes/cheesecake.jpg">
+                    <source src="imagenes/video.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            
+            <div class="video-overlay d-none d-md-block">
+                <h1 class="display-3">PASTELERÍA DELIS</h1>
+                <h5 class="text-uppercase tracking-widest" style="letter-spacing: 3px;">Diseño & Sabor Artesanal</h5>
+                <a href="#contacto" class="btn-pink mt-3">Contáctame</a>
+            </div>
+
+            <div class="wave-transition">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                   <path d="M-1.35,34.73 C245.26,149.89 268.40,150.87 502.03,28.84 L500.00,149.60 L0.00,149.60 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                </svg>
+            </div>
+            <div class="p-3 text-center border-top bg-white">
+                <span class="small fw-bold text-uppercase" style="color: #c2185b;">Decoración Profesional de Pasteles</span>
+            </div>
+        </div>
+    </div>
+
+                <div class="wave-transition">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M-1.35,34.73 C245.26,149.89 268.40,150.87 502.03,28.84 L500.00,149.60 L0.00,149.60 Z" style="stroke: none; fill: #f8f9fa;"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm cake-hover bg-white">
+                        <div class="img-crop"><img src="imagenes/brazogitan.jpg" class="card-img-top"></div>
+                        <div class="card-body text-center p-4 d-flex flex-column">
+                            <h6 class="fw-bold" style="color: var(--pink-main);">EXPERIENCIA ARTESANAL</h6>
+                            <p class="small text-muted">Sabores que cuentan historias horneadas con amor.</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm cake-hover bg-white">
+                        <div class="img-crop"><img src="imagenes/cupcakes.jpg" class="card-img-top"></div>
+                        <div class="card-body text-center p-4 d-flex flex-column">
+                            <h6 class="fw-bold" style="color: var(--pink-main);">CLUB DE PRIVILEGIOS</h6>
+                            <p class="small text-muted">Tu lealtad tiene recompensa dulce.</p>
+                            <a href="#" class="btn btn-sm text-white rounded-pill mt-auto" style="background-color: var(--pink-main);">Unirme Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                        <div class="ratio ratio-16x9">
+                            <video autoplay muted loop playsinline>
+                                <source src="imagenes/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="p-3 text-center">
+                            <span class="small fw-bold text-uppercase" style="color: var(--pink-dark);">Decoración Profesional de Eventos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="proceso" class="bg-white border-top border-bottom"> 
+            <!--explicacion de la amgia-->
+            <div class="container text-center">
+                <h2 class="fw-bold mb-5" style="color: var(--pink-main);">Cómo nace la magia</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="step-number">1</div>
+                        <h5>Ingredientes Premium</h5>
+                        <p class="text-muted small">Seleccionamos las mejores frutas y chocolates de origen orgánico.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step-number">2</div>
+                        <h5>Amasado a Mano</h5>
+                        <p class="text-muted small">Mantenemos la técnica tradicional para garantizar texturas perfectas.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step-number">3</div>
+                        <h5>Decoración de Autor</h5>
+                        <p class="text-muted small">Cada detalle es colocado meticulosamente por nuestros artistas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--historia de la empresa-->
+        <section id="historia" class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="imagenes/horneando.jpg" class="img-fluid rounded-5 shadow" alt="Horneando con amor" onerror="this.src='https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                    <h2 class="display-5 fw-bold" style="color: var(--pink-main);">Nuestra Dulce Historia</h2>
+                    <p class="lead text-muted">Todo comenzó en una pequeña cocina familiar con una receta de la abuela y un sueño grande.</p>
+                    <p>En <strong>Dulce Artesanía</strong>, no solo hacemos pasteles; creamos momentos memorables. Utilizamos ingredientes 100% naturales.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h3 class="fw-bold" style="color: var(--pink-dark);">+10</h3>
+                            <p class="small text-uppercase fw-semibold">Años de Experiencia</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="fw-bold" style="color: var(--pink-dark);">5k</h3>
+                            <p class="small text-uppercase fw-semibold">Clientes Felices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--pequeño catalogo-->
+        <section id="catalogo" class="bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" style="color: var(--pink-main);">Favoritos de la Casa</h2>
+                    <p class="text-muted">Los más pedidos de esta temporada</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100 cake-hover text-center">
+                            <img src="imagenes/tarta-frutos.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=500&q=80'">
+                            <div class="card-body">
+                                <h5 class="card-title">Tarta de Frutos Rojos</h5>
+                                <p class="card-text text-muted small">Mousse de vainilla sobre base crocante.</p>
+                              
+                                <button class="btn btn-outline-danger btn-sm rounded-pill px-4">Pedir Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100 cake-hover text-center">
+                            <img src="imagenes/chocolate.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80'">
+                            <div class="card-body">
+                                <h5 class="card-title">Muerte por Chocolate</h5>
+                                <p class="card-text text-muted small">Bizcocho húmedo con ganache belga.</p>
+                                
+                                <button class="btn btn-outline-danger btn-sm rounded-pill px-4">Pedir Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100 cake-hover text-center">
+                            <img src="imagenes/macarons.jpg" class="card-img-top" onerror="this.src='https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=500&q=80'">
+                            <div class="card-body">
+                                <h5 class="card-title">Pack de Macarons</h5>
+                                <p class="card-text text-muted small">Caja de 12 unidades surtidas.</p>
+                                
+                                <button class="btn btn-outline-danger btn-sm rounded-pill px-4">Pedir Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--video central-->
+        <section id="video-overlay">
+            <section class="container-fluid px-md-5 my-5">
+    <div class="row g-0 align-items-center bg-white shadow-sm rounded-5 overflow-hidden border">
+        
+        <div class="col-lg-8 p-0">
+            <div class="ratio ratio-21x9">
+                <video autoplay muted loop playsinline style="object-fit: cover;">
+                    <source src="imagenes/video.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.1), transparent);"></div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 p-5 text-center">
+            <span class="badge rounded-pill px-3 py-2 mb-3" style="background-color: var(--soft-bg); color: var(--pink-main); border: 1px solid var(--pink-main);">
+                CALIDAD PREMIUM
+            </span>
+            <h2 class="fw-bold display-6" style="color: #333;">Arte en Movimiento</h2>
+            <p class="text-muted small mt-3">
+                Cada detalle cuenta. Mira cómo transformamos ingredientes simples en obras maestras comestibles.
+            </p>
+            <div class="mt-4">
+                <hr class="mx-auto mb-4" style="width: 50px; height: 2px; background: var(--pink-main); opacity: 1;">
+                <p class="fst-italic text-secondary small">#DulceArtesanía</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+        </section>
+        <!--preguntas-->
+        <section class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center fw-bold mb-4" style="color: var(--pink-main);">Dudas Frecuentes</h2>
+                    <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                                    ¿Hacen envíos a domicilio?
+                                </button>
+                            </h2>
+                            <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">Realizamos envíos en toda el área metropolitana de Lunes a Sábado. El costo varía según la zona.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                                    ¿Tienen opciones para celíacos o veganos?
+                                </button>
+                            </h2>
+                            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">¡Sí! Contamos con una línea especial libre de gluten y postres basados en plantas bajo pedido previo de 48 horas.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--reseñas-->
+        <section class="container">
+            <div class="text-center mb-5">
+                <i class="bi bi-chat-quote fs-1" style="color: var(--pink-main);"></i>
+                <h2 class="fw-bold">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-bottom border-4" style="border-color: var(--pink-main) !important;">
+                        <p class="fst-italic text-muted small">"El pastel de mi boda fue simplemente espectacular."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="fw-bold small">María García</div>
+                            <div class="ms-auto text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-bottom border-4" style="border-color: var(--pink-main) !important;">
+                        <p class="fst-italic text-muted small">"Los mejores cupcakes de la ciudad. Siempre frescos."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="fw-bold small">Juan Pérez</div>
+                            <div class="ms-auto text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-bottom border-4" style="border-color: var(--pink-main) !important;">
+                        <p class="fst-italic text-muted small">"Atención impecable y entrega a tiempo."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="fw-bold small">Ana Martínez</div>
+                            <div class="ms-auto text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!--footer-->
+  <footer class="pt-5 pb-4 bg-light border-top">
+    <div class="container">
+        <div class="row align-items-center mb-5 gy-4">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h3 class="fw-bold mb-1" style="color: var(--pink-main); letter-spacing: -1px;">DULCE ARTESANÍA</h3>
+                <p class="text-muted mb-0">Pastelería DeLis | Creando momentos dulces desde 2026.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-white p-3 rounded-4 shadow-sm d-flex flex-column flex-sm-row gap-2 align-items-center border">
+                    <span class="small fw-bold px-2 text-nowrap"><i class="bi bi-envelope-heart me-2"></i>¡Únete al club!</span>
+                    <div class="input-group">
+                        <input type="email" class="form-control border-0 bg-light" placeholder="tu@email.com" aria-label="Email">
+                        <button class="btn btn-dark rounded-3 px-4" type="button">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="opacity-10 mb-5">
+
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Contacto</h6>
+                <ul class="list-unstyled text-muted small">
+                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-geo-alt me-2 text-danger"></i> Calle Dulce #123, Ciudad</li>
+                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-telephone me-2 text-success"></i> +1 234 567 890</li>
+                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-envelope me-2 text-primary"></i> hola@delis.com</li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Explora</h6>
+                <ul class="nav flex-column small">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Catálogo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Pedidos Especiales</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Nuestras Sedes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Blog Dulce</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Horario de Magia</h6>
+                <div class="p-3 rounded-3 bg-white border-start border-4 shadow-sm" style="border-color: var(--pink-main) !important;">
+                    <p class="small mb-1 text-muted">Lunes a Sábado</p>
+                    <p class="fw-bold mb-0 text-dark">08:00 AM - 08:00 PM</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center text-lg-end">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Síguenos</h6>
+                <div class="d-flex justify-content-center justify-content-lg-end gap-2">
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-whatsapp"></i></a>
+                </div>
+                <p class="mt-4 small text-muted">Descarga nuestra App de fidelidad y gana puntos con cada compra.</p>
+            </div>
+        </div>
+
+        <div class="mt-5 pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="small text-muted mb-0">© 2026 <strong>Dulce Artesanía</strong>. Hecho con <i class="bi bi-heart-fill text-danger"></i> para ti.</p>
+            <div class="d-flex gap-4">
+                <a href="blog.html" class="text-muted small text-decoration-none">Políticas</a>
+                <a href="contactos.html" class="text-muted small text-decoration-none">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

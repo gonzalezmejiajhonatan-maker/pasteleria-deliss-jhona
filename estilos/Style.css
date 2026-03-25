@@ -1,0 +1,286 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f9e3f6;
+    overflow-x: hidden;
+}
+
+/* --- NAVEGACIÓN --- */
+.bg-dark1 {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    padding: 15px 5% !important;
+    background-color: transparent !important;
+}
+
+.navbar-nav .nav-link {
+    color: #f31515 !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 15px;
+    padding: 8px 20px !important;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    border: 1px solid #d81b60 !important;
+    color: #d81b60 !important;
+}
+
+/* --- SECCIÓN VIDEO --- */
+.video-section { 
+    position: relative; 
+    overflow: hidden;
+    background-color: #000;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: rgb(255, 66, 198);
+    text-align: center;
+    z-index: 10; 
+}
+
+.video-overlay h1 { 
+    font-weight: 800; 
+    font-size: 3.5rem; 
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* --- ONDA (WAVE) --- */
+.wave-transition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px; 
+    line-height: 0;
+    z-index: 5;
+    margin-bottom: -1px;
+}
+
+.wave-transition svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- BARRA INFERIOR VIDEO --- */
+.border-top.bg-white {
+    position: relative;
+    z-index: 6;
+}
+
+/* --- TARJETAS Y GALERÍA --- */
+.cake-card { 
+    transition: 0.3s; 
+    border: none; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+.cake-card:hover { transform: translateY(-10px); }
+
+.img-crop { 
+    height: 250px; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.img-crop img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: 0.3s; 
+}
+
+.cake-card:hover img { transform: scale(1.05); }
+
+/* --- COMPONENTES --- */
+.btn-pink {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-pink:hover { 
+    background-color: #c2185b; 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    background-color: #fce4ec;
+    color: #d81b60;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-link:hover { 
+    background-color: #d81b60; 
+    color: white; 
+    transform: rotate(360deg); 
+}
+
+/* --- FORMULARIO --- */
+.fromcont input, .fromcont textarea {
+    background-color: #fce4ec !important;
+    border: none !important;
+    border-bottom: 2px solid #f8bbd0 !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    margin-bottom: 20px;
+}
+ 
+footer {
+    background-color: #fff5f8 !important; 
+    border-top: 1px solid #f8bbd0;
+}
+
+footer h5, footer p, footer .small {
+    color: #c2185b !important; 
+}
+
+
+.social-link {
+    background-color: #fce4ec; 
+    color: #c2185b;
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover; /* Esto evita que las imágenes se deformen */
+}
+
+.img-fluid.rounded-5 {
+    border-radius: 2rem !important;
+}
+
+section {
+    transition: transform 0.3s ease;
+}
+
+        :root {
+            --pink-main: #d81b60;
+            --pink-dark: #c2185b;
+            --soft-bg: #fff5f8;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fdfdfd; }
+
+        /* Hero Header con Video */
+        .services-hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(194, 24, 91, 0.4); /* Filtro rosa traslúcido */
+            z-index: 2;
+        }
+
+        .hero-content { position: relative; z-index: 3; text-align: center; }
+
+        .wave-container {
+            position: absolute;
+            bottom: -1px; left: 0; width: 100%;
+            z-index: 4; line-height: 0;
+        }
+
+        /* Service Cards */
+        .service-card {
+            border: none;
+            border-radius: 20px;
+            transition: 0.3s;
+            background: white;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(216, 27, 96, 0.1) !important;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--pink-main);
+            margin-bottom: 20px;
+        }
+
+        .badge-price {
+            background-color: var(--soft-bg);
+            color: var(--pink-main);
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .btn-pink {
+            background-color: var(--pink-main);
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-pink:hover { background-color: var(--pink-dark); color: white; }
+  

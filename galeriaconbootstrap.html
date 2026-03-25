@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Artesanía - Pastelería DeLis</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos/Style.css">
+    <style>
+        /* Estilos necesarios para posicionar la onda correctamente y hacerla más grande */
+        .video-section { 
+            position: relative; 
+            overflow: hidden; /* Asegura que la onda no se salga del contenedor */
+        }
+        
+        .wave-transition {
+            position: absolute;
+            bottom: -1px; /* Pequeño ajuste para evitar líneas residuales */
+            left: 0;
+            width: 100%;
+            height: 250px; /* ALTURA AUMENTADA para que cubra más el video */
+            line-height: 0;
+            z-index: 5;
+        }
+        
+        .wave-transition svg {
+            height: 100%;
+            width: 100%;
+        }
+
+        .video-overlay { z-index: 10; }
+    </style>
+</head>
+<body>
+
+  <!--navegador-->  
+     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cake2"></i> DULCE ARTESANÍA
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienessomos.html">¿Quién soy?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeriaconbootstrap.html">sevicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contactos.html">contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--video slider-->
+    <div class="container-fluid p-0">
+        <div class="video-section">
+            <div class="ratio ratio-21x9">
+                 <div class="wave-transition">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                  <path d="M-1.92,89.85 C186.00,6.21 328.21,5.22 500.90,92.80 L500.00,-0.00 L0.00,-0.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                </svg>
+            </div>
+                <video autoplay muted loop playsinline poster="imagenes/cheesecake.jpg">
+                    <source src="imagenes/video.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            
+            <div class="video-overlay d-none d-md-block">
+                <h1 class="display-3">PASTELERÍA DELIS</h1>
+                <h5 class="text-uppercase tracking-widest" style="letter-spacing: 3px;">Diseño & Sabor Artesanal</h5>
+                <a href="#contacto" class="btn-pink mt-3">Contáctame</a>
+            </div>
+
+            <div class="wave-transition">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                   <path d="M-1.35,34.73 C245.26,149.89 268.40,150.87 502.03,28.84 L500.00,149.60 L0.00,149.60 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                </svg>
+            </div>
+            <div class="p-3 text-center border-top bg-white">
+                <span class="small fw-bold text-uppercase" style="color: #c2185b;">Decoración Profesional de Pasteles</span>
+            </div>
+        </div>
+    </div>
+
+   <!--texto nosotros somos-->  
+    <section id="nosotros" class="py-5 bg-white">
+        <div class="container text-center py-4">
+            <h2 class="fw-bold mb-4" style="color: var(--pink-main);">¿Quién somos?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h3 class="mb-3 text-secondary"> somos pasteleria delis</h3>
+                    <p class="text-muted">En Pastelería DeLis, transformamos ingredientes de alta calidad en momentos inolvidables. Nuestra pasión es el detalle artesanal, creando sabores que cuentan una historia en cada bocado.</p>
+                    <p class="text-muted small"> Nuestra Pasión: Hornear tus Momentos
+En Dulce Artesanía, convertimos ingredientes simples en experiencias inolvidables. No solo hacemos pasteles; creamos el centro de tus celebraciones con dedicación artesanal y un diseño único.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--tarjetas de servicios-->
+<section>
+    <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card service-card p-4 shadow-sm border-0">
+                    <div class="service-icon"><i class="bi bi-gift"></i></div>
+                    <h4 class="fw-bold">Pasteles de Boda</h4>
+                    <p class="text-muted small">Diseños arquitectónicos y sabores sofisticados para el día más importante de tu vida.</p>
+                    <div class="mt-auto">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card p-4 shadow-sm border-0">
+                    <div class="service-icon"><i class="bi bi-balloon-heart"></i></div>
+                    <h4 class="fw-bold">Eventos Infantiles</h4>
+                    <p class="text-muted small">Mesas temáticas, cupcakes y pasteles llenos de color y fantasía para los más pequeños.</p>
+                    <div class="mt-auto">
+                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card p-4 shadow-sm border-0">
+                    <div class="service-icon"><i class="bi bi-cup-hot"></i></div>
+                    <h4 class="fw-bold">Catering Dulce</h4>
+                    <p class="text-muted small">Selección de mini repostería premium para reuniones empresariales o eventos privados.</p>
+                    <div class="mt-auto">
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--galeria de productos-->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: var(--pink-main);">Servicios - Galería</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-2">
+                            <img src="imagenes/masitassecas.jpg" class="rounded-circle" alt="Masitas">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Cheesecake Especial</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-2">
+                            <img src="imagenes/cupcakes.jpg" class="rounded-circle" alt="Cupcakes">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Cupcakes Variados</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-2">
+                            <img src="imagenes/cuñapes.jpg" class="rounded-4" alt="Cuñapés">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Cuñapés Tradicionales</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-3">
+                            <img src="imagenes/brazogitan.jpg" class="img-thumbnail" alt="Brazo Gitano">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Brazo Gitano</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-3">
+                            <img src="imagenes/cheesecake.jpg" class="rounded-pill" alt="Postres">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Postres de Temporada</h6></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-2">
+                            <img src="imagenes/pasteleshistoria.jpg" class="rounded shadow" alt="Especiales">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Pedidos Especiales</h6></div>
+                    </div>
+                </div>
+                      <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-3">
+                            <img src="imagenes/pastel2.jpg" class="rounded-pill" alt="Postres">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">la cremosa</h6></div>
+                    </div>
+                </div>
+                      <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-3">
+                            <img src="imagenes/pastel5.jpg" class="rounded shadow" alt="Postres">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">pastel chocolandia</h6></div>
+                    </div>
+                </div>
+                      <div class="col-md-4">
+                    <div class="card cake-card h-100 text-center bg-white">
+                        <div class="img-crop p-3">
+                            <img src="imagenes/pastel3.jpg" class="rounded-pill" alt="Postres">
+                        </div>
+                        <div class="card-body"><h6 class="fw-bold">Postres de Temporada</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--personalizacion y servisios-->
+    <section class="container py-5" >
+        <hr class="my-5 opacity-25">
+     <div class="row align-items-center py-5">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold mb-4" style="color: var(--pink-main);">Personalización Total</h2>
+                <p class="lead">¿Tienes una idea loca? Nosotros la horneamos.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-check2-circle me-2 text-danger"></i> Opciones Veganas y Sin Gluten.</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle me-2 text-danger"></i> Impresiones comestibles de alta definición.</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle me-2 text-danger"></i> Entregas a domicilio programadas.</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle me-2 text-danger"></i> Degustaciones privadas para novios.</li>
+                </ul>
+                <a href="contactos.html" class="btn btn-pink mt-3">Cotizar mi evento</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="imagenes/macarons.jpg" class="img-fluid rounded-5 shadow" alt="Detalle de dulces" onerror="this.src='https:images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=800&q=80'">
+            </div>
+        </div>
+
+    </section>
+<!--footer-->
+   <footer class="pt-5 pb-4 bg-light border-top">
+    <div class="container">
+        <div class="row align-items-center mb-5 gy-4">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h3 class="fw-bold mb-1" style="color: var(--pink-main); letter-spacing: -1px;">DULCE ARTESANÍA</h3>
+                <p class="text-muted mb-0">Pastelería DeLis | Creando momentos dulces desde 2026.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-white p-3 rounded-4 shadow-sm d-flex flex-column flex-sm-row gap-2 align-items-center border">
+                    <span class="small fw-bold px-2 text-nowrap"><i class="bi bi-envelope-heart me-2"></i>¡Únete al club!</span>
+                    <div class="input-group">
+                        <input type="email" class="form-control border-0 bg-light" placeholder="tu@email.com" aria-label="Email">
+                        <button class="btn btn-dark rounded-3 px-4" type="button">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="opacity-10 mb-5">
+
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Contacto</h6>
+                <ul class="list-unstyled text-muted small">
+                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-geo-alt me-2 text-danger"></i> Calle Dulce #123, Ciudad</li>
+                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-telephone me-2 text-success"></i> +1 234 567 890</li>
+                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-envelope me-2 text-primary"></i> hola@delis.com</li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Explora</h6>
+                <ul class="nav flex-column small">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Catálogo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Pedidos Especiales</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Nuestras Sedes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Blog Dulce</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Horario de la Magia</h6>
+                <div class="p-3 rounded-3 bg-white border-start border-4 shadow-sm" style="border-color: var(--pink-main) !important;">
+                    <p class="small mb-1 text-muted">Lunes a Sábado</p>
+                    <p class="fw-bold mb-0 text-dark">08:00 AM - 08:00 PM</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center text-lg-end">
+                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Síguenos</h6>
+                <div class="d-flex justify-content-center justify-content-lg-end gap-2">
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-whatsapp"></i></a>
+                </div>
+                <p class="mt-4 small text-muted">Descarga nuestra App de fidelidad y gana puntos con cada compra.</p>
+            </div>
+        </div>
+
+        <div class="mt-5 pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="small text-muted mb-0">© 2026 <strong>Dulce Artesanía</strong>. Hecho con <i class="bi bi-heart-fill text-danger"></i> para ti.</p>
+            <div class="d-flex gap-4">
+                <a href="blog.html" class="text-muted small text-decoration-none">Políticas</a>
+                <a href="contactos.html" class="text-muted small text-decoration-none">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
