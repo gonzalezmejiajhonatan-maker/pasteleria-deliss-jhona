@@ -299,71 +299,88 @@
         </div>
     </main>
 <!--footer-->
-    <footer class="pt-5 pb-4 bg-light border-top">
-    <div class="container">
-        <div class="row align-items-center mb-5 gy-4">
-            <div class="col-lg-6 text-center text-lg-start">
-                <h3 class="fw-bold mb-1" style="color: var(--pink-main); letter-spacing: -1px;">DULCE ARTESANÍA</h3>
-                <p class="text-muted mb-0">Pastelería DeLis | Creando momentos dulces desde 2026.</p>
+     <footer class="footer-artesanal mt-5">
+    <div class="container mb-n5 position-relative z-3">
+        <div class="newsletter-box p-4 p-md-5 rounded-5 shadow-lg border-0 bg-white">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start mb-4 mb-lg-0">
+                    <span class="badge rounded-pill px-3 py-2 mb-2 bg-pink-light text-pink-main">BENEFICIO EXCLUSIVO</span>
+                    <h2 class="fw-bold mb-1 display-6">¡Únete a nuestra lista dulce!</h2>
+                    <p class="text-muted mb-0">Recibe recetas secretas y descuentos cada mes.</p>
+                </div>
+                <div class="col-lg-5">
+                    <form class="d-flex flex-column flex-sm-row gap-2 bg-light p-2 rounded-pill shadow-sm border">
+                        <input type="email" class="form-control border-0 bg-transparent rounded-pill px-4" placeholder="tu@email.com" required>
+                        <button class="btn btn-pink-gradient rounded-pill px-4 py-2 fw-bold" type="submit">Suscribirme</button>
+                    </form>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <div class="bg-white p-3 rounded-4 shadow-sm d-flex flex-column flex-sm-row gap-2 align-items-center border">
-                    <span class="small fw-bold px-2 text-nowrap"><i class="bi bi-envelope-heart me-2"></i>¡Únete al club!</span>
-                    <div class="input-group">
-                        <input type="email" class="form-control border-0 bg-light" placeholder="tu@email.com" aria-label="Email">
-                        <button class="btn btn-dark rounded-3 px-4" type="button">Suscribirse</button>
+        </div>
+    </div>
+
+    <div class="footer-main pt-5 pb-4" style="background-color: #fffbfd; border-top: 1px solid #fce4ec;">
+        <div class="container pt-5 mt-4">
+            <div class="row gy-5 align-items-start">
+                <div class="col-lg-3 text-center text-lg-start">
+                    <h3 class="fw-bold mb-3" style="letter-spacing: -1px;">DULCE <span style="color: var(--pink-main);">ARTESANÍA</span></h3>
+                    <p class="text-muted pe-lg-3 small">Transformamos ingredientes naturales en experiencias memorables. Pastelería DeLis, creando momentos dulces desde 2026.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 d-none d-lg-block text-center">
+                    <div class="rounded-4 overflow-hidden shadow-sm border border-white" style="height: 160px; transform: rotate(-2deg);">
+                        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="imagenes/decoracion1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 offset-lg-0 ps-lg-4">
+                    <h6 class="text-uppercase fw-bold mb-4 small text-dark" style="letter-spacing: 1px;">Explora</h6>
+                    <ul class="nav flex-column gap-3">
+                        <li class="nav-item"><a href="#" class="footer-link">Catálogo Dulce</a></li>
+                        <li class="nav-item"><a href="#" class="footer-link">Mesas de Postres</a></li>
+                        <li class="nav-item"><a href="#" class="footer-link">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a href="#" class="footer-link">Blog de Recetas</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="text-uppercase fw-bold mb-4 small text-dark" style="letter-spacing: 1px;">Horario de la Magia</h6>
+                    <div class="p-3 rounded-4 bg-white border-start border-4 shadow-sm h-scroll-card" style="border-color: var(--pink-main) !important;">
+                        <p class="small mb-1 text-muted">Lunes a Sábado</p>
+                        <p class="fw-bold mb-0 text-dark">08:00 - 20:00</p>
+                        <div class="mt-2 pt-2 border-top">
+                            <span class="text-success small" style="font-size: 0.7rem;"><i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i>Abierto ahora</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 text-center text-lg-start">
+                    <h6 class="text-uppercase fw-bold mb-4 small text-dark" style="letter-spacing: 1px;">Nuestra App</h6>
+                    <p class="small text-muted mb-3">Pide tus postres favoritos y acumula <strong>Puntos Dulces</strong>.</p>
+                    <div class="d-flex flex-column align-items-center align-items-lg-start gap-2">
+                        <a href="#" class="app-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height: 40px;">
+                        </a>
+                        <a href="#" class="app-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 40px;">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr class="opacity-10 mb-5">
-
-        <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3">
-                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Contacto</h6>
-                <ul class="list-unstyled text-muted small">
-                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-geo-alt me-2 text-danger"></i> Calle Dulce #123, Ciudad</li>
-                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-telephone me-2 text-success"></i> +1 234 567 890</li>
-                    <li class="mb-3 d-flex align-items-center"><i class="bi bi-envelope me-2 text-primary"></i> hola@delis.com</li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-2">
-                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Explora</h6>
-                <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Catálogo</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Pedidos Especiales</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Nuestras Sedes</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted link-primary">Blog Dulce</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Horario de la Magia</h6>
-                <div class="p-3 rounded-3 bg-white border-start border-4 shadow-sm" style="border-color: var(--pink-main) !important;">
-                    <p class="small mb-1 text-muted">Lunes a Sábado</p>
-                    <p class="fw-bold mb-0 text-dark">08:00 AM - 08:00 PM</p>
+            <div class="mt-5 pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="small text-muted mb-0">© 2026 <strong>Dulce Artesanía</strong>. Hecho con <i class="bi bi-heart-fill text-danger beat"></i> para ti.</p>
+                <div class="d-flex gap-4">
+                    <a href="#" class="text-muted small text-decoration-none hover-pink">Políticas de Privacidad</a>
+                    <a href="#" class="text-muted small text-decoration-none hover-pink">Cookies</a>
                 </div>
-            </div>
-
-            <div class="col-12 col-lg-4 text-center text-lg-end">
-                <h6 class="text-uppercase fw-bold mb-4 small text-dark">Síguenos</h6>
-                <div class="d-flex justify-content-center justify-content-lg-end gap-2">
-                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" class="btn btn-outline-dark btn-sm rounded-circle shadow-sm" style="width: 40px; height: 40px; line-height: 28px;"><i class="bi bi-whatsapp"></i></a>
-                </div>
-                <p class="mt-4 small text-muted">Descarga nuestra App de fidelidad y gana puntos con cada compra.</p>
-            </div>
-        </div>
-
-        <div class="mt-5 pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-            <p class="small text-muted mb-0">© 2026 <strong>Dulce Artesanía</strong>. Hecho con <i class="bi bi-heart-fill text-danger"></i> para ti.</p>
-            <div class="d-flex gap-4">
-                <a href="blog.html" class="text-muted small text-decoration-none">Políticas</a>
-                <a href="contactos.html" class="text-muted small text-decoration-none">Cookies</a>
             </div>
         </div>
     </div>
